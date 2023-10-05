@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class ball : MonoBehaviour
 {
-    public float Xposition = 0f;
+    public float Xposition = -0.45f;
     public float Yposition = 0f;
     public float xSpeed;
     public float ySpeed;
@@ -14,8 +14,8 @@ public class ball : MonoBehaviour
     void Start() 
     {
      //transform.position = new Vector3(Xposition, Yposition, 0);
-     xSpeed = 3f;
-     ySpeed = 3f;
+     xSpeed = 1f;
+     ySpeed = 1f;
     }
 
     // Update is called once per frame
@@ -29,12 +29,12 @@ public class ball : MonoBehaviour
     {
             if (collision.gameObject.CompareTag("horizontalwall")) 
             {
-                ySpeed = ySpeed * -1;
+                ySpeed = ySpeed * -1f;
                 Debug.Log("Touches horizontal wall");
             }
-            if (collision.gameObject.CompareTag("verticalwall"))
+            else if (collision.gameObject.CompareTag("verticalwall"))
             {
-                xSpeed = xSpeed * -1;
+                xSpeed = xSpeed * -1f;
                 Debug.Log("Touches vertical wall");
             }
         }
