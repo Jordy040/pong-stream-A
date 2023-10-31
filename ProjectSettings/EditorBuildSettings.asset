@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/pongOnePlayer.unity
+    guid: 40269d694dad7ba4092f7b22eadaf380
+  - enabled: 1
+    path: Assets/Scenes/pongPlayerOne.unity
+    guid: f529a1ec110dac948b53fd82c5d566b2
+  - enabled: 1
+    path: Assets/Scenes/HardcorePong.unity
+    guid: f6263fe9bc4023b488950e2465f6b36a
   m_configObjects: {}

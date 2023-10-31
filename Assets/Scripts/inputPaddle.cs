@@ -12,11 +12,11 @@ public class inputPaddle : MonoBehaviour
 
     void setKeyAndMovement(KeyCode up, KeyCode down)
     {
-        if (Input.GetKey(up))
+        if (Input.GetKey(up) && transform.position.y <= 3.4f)
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-        else if (Input.GetKey(down))
+        else if (Input.GetKey(down) && transform.position.y >= -3.2f)
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
         }

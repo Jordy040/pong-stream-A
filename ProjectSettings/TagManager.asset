@@ -7,6 +7,8 @@ TagManager:
   - verticalwall
   - horizontalwall
   - verticalwall_left
+  - scoreLeft
+  - scoreRight
   layers:
   - Default
   - TransparentFX
